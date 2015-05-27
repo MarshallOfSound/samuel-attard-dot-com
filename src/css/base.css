@@ -46,18 +46,39 @@ body {
   font-weight: 500;
   font-size: 90px;
 }
-.downArrow {
+.darkOverlay {
   background: #222222;
   position: absolute;
-  bottom: 0;
-  left: 50%;
-  margin-left: -75px;
   z-index: 4;
   padding: 12px 30px;
   color: white;
-  font-size: 52px;
   cursor: pointer;
   width: 150px;
+}
+.blogLink {
+  position: fixed;
+  right: 0;
+  top: 20px;
+  width: auto;
+  padding-right: 62px;
+  box-shadow: 0 0 14px #222;
+  transition: all 0.2s;
+  z-index: 4;
+}
+.blogLink a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+}
+.blogLink:hover {
+  padding-right: 82px;
+}
+.downArrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -75px;
+  font-size: 52px;
 }
 .downArrow i {
   position: relative;

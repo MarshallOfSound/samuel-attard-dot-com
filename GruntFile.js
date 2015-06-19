@@ -5,6 +5,9 @@ module.exports = function(grunt) {
         pkg: grunt.file.readJSON('package.json'),
         less: {
             development: {
+                options: {
+                    compress: true
+                },
                 files: {
                     "src/css/base.css": "src/less/base.less",
                     "src/css/404.css": "src/less/404.less"
@@ -28,6 +31,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
 
     // Default task(s).
-    grunt.registerTask('default', ['uglify']);
+    grunt.registerTask('default', ['uglify', 'less']);
 
 };

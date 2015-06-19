@@ -247,13 +247,16 @@ body {
   position: relative;
   left: 300px;
 }
-.main .project a:hover + .project-hover {
+.main .project a:hover + .project-hover,
+.main .project a.hover + .project-hover {
   opacity: 1;
 }
-.main .project a:hover + .project-hover hr {
+.main .project a:hover + .project-hover hr,
+.main .project a.hover + .project-hover hr {
   width: 100%;
 }
-.main .project a:hover + .project-hover p {
+.main .project a:hover + .project-hover p,
+.main .project a.hover + .project-hover p {
   left: 0;
 }
 @media screen and (max-width: 600px) {
